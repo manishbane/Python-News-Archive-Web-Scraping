@@ -1,0 +1,12 @@
+# on
+version: '3.7'
+services:
+  mongodb_container:
+    image: mongo:latest
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: manish_mongo
+      MONGO_INITDB_ROOT_PASSWORD: manishmongo123
+    ports:
+    - 27017:27017
+    volumes:
+    - /news/mongo-data:/data/db
