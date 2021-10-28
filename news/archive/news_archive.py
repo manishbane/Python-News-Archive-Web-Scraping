@@ -108,7 +108,7 @@ def main():
 
 #Scheduler to run this news archival process every 15 min
 
-schedule.every(10).seconds.do(main)
+schedule.every(15).minutes.do(main)
 
 while True:
     schedule.run_pending()
